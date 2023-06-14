@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 01</title>
+    <link rel="stylesheet" href="./assignment-01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar code start here -->
+    <nav id="home" class="navbar one">
+        <div class="logo"><img src="./images/logo-1.png" alt="logo"></div>
+        <div class="navigation">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#map">About</a></li>
+                <li><a href="#servicess">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button"><a href="#contact-us"><button>Sign Up</button></a></div>
+    </nav>
+
+    <!-- main bg part start here -->
+
+    <div class="bg">
+        <div class="bg-content">
+            <h1>Digital Marketing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vitae ea provident maxime dolorem et
+                odit totam architecto, laudantium, officia recusandae? Quaerat voluptate accusantium nulla consequuntur
+                repellendus earum a quis?</p>
+        </div>
+    </div>
+
+    <div class="services-heading">
+        <h1 id="servicess">Our Services</h1>
+    </div>
+
+    <div class="service-box">
+        <div class="service">
+            <img src="./images/email-market.jpg" alt="">
+            <h2>Email Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+        <div class="service">
+            <img src="./static/images/fb-2.jpg" alt="">
+            <h2>Facebook Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+        <div class="service">
+            <img src="./images/insta.jpg" alt="">
+            <h2>Instagram Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+        <div class="service">
+            <img src="./images/branding.jpg" alt="">
+            <h2>Branding</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+        <div class="service">
+            <img src="./images/affiliate.png" alt="">
+            <h2>Affiliate Marketing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+        <div class="service">
+            <img src="./images/advertising.jpg" alt="">
+            <h2>Online Advertising</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, commodi!</p>
+            <button>Get Now</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-form">
+            <h1 id="contact-us">Contact Us</h1>
+            <form action="">
+                <input class="input" type="text" placeholder="Username" required>
+                <input class="input" type="password" placeholder="Password" required>
+                <input class="input" type="email" placeholder="Email" required>
+                <input class="input" type="number" placeholder="Phone" required>
+                <button class="form-button">Sign Up</button>
+            </form>
+        </div>
+        <div id="map" class="footer-map">
+
+        </div>
+    </div>
+
+    <nav class="navbar one">
+        <div class="footer-nav"><a href="#home">Scroll Top &#8593</a></div>
+        <div class="navigation">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    </nav>
+</body>
+<script>
+    function myMap() {
+
+        var positionmap = { lat: 34.0000768, lng: 71.5063296 };
+        var map = new google.maps.Map(document.getElementById('map'),
+            {
+                zoom: 12,
+                center: positionmap
+            });
+
+        var marker = new google.maps.Marker({
+
+            position: positionmap,
+            map: map
+        });
+
+    }
+</script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTbYZF_kDxKNopcvej6oh-eVs1z9Xq2J0&callback=myMap"></script>
+
+</html>
